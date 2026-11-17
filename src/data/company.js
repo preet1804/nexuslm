@@ -25,3 +25,4 @@ export const companyData = {
   },
   statsDisclaimer: "All demonstration projects are fully functional showcase implementations built by NEXUS LM for design and architectural review.",
 };
+

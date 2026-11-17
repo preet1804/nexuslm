@@ -488,3 +488,4 @@ export default function Home({ onOpenQuote }) {
     </div>
   );
 }
+

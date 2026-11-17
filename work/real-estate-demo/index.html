@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apex Horizons — Bespoke Real Estate &amp; Sky Residences | Surat</title>
+  <meta name="description" content="Apex Horizons luxury residential property portfolio in Surat. Duplex sky penthouses, waterfront villas, and bespoke homes in Vesu, Dumas Road, and Piplod." />
+  <link rel="icon" type="image/png" href="../../favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css" />
+  <style>
+    :root {
+      --re-bg: #0D1117;
+      --re-card: #161B22;
+      --re-gold: #D29922;
+      --re-gold-hover: #E3B341;
+      --re-border: #30363D;
+      --re-text: #F0F6FC;
+      --re-muted: #8B949E;
+    }
+    body { background-color: var(--re-bg); color: var(--re-text); font-family: 'Inter', sans-serif; margin: 0; }
+    h1, h2, h3, .font-serif { font-family: 'Cinzel', serif; }
+    .re-btn-gold { background: var(--re-gold); color: #0D1117; font-weight: 700; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.1em; padding: 0.75rem 1.5rem; border-radius: 4px; border: none; cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.2s; }
+    .re-btn-gold:hover { background: var(--re-gold-hover); }
+    .re-btn-outline { background: transparent; color: var(--re-text); border: 1px solid var(--re-border); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.75rem 1.5rem; border-radius: 4px; text-decoration: none; display: inline-block; transition: all 0.2s; }
+    .re-btn-outline:hover { border-color: var(--re-gold); background: #21262D; }
+    .prop-filter-btn { background: #21262D; color: var(--re-muted); border: 1px solid var(--re-border); padding: 0.5rem 1rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+    .prop-filter-btn.active { background: var(--re-gold); color: #0D1117; border-color: var(--re-gold); }
+    .re-input { width: 100%; box-sizing: border-box; background: #21262D; border: 1px solid var(--re-border); color: #FFF; padding: 0.75rem 1rem; border-radius: 4px; font-size: 0.8125rem; outline: none; }
+    .re-input:focus { border-color: var(--re-gold); }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Demo Top Banner -->
+  <div class="demo-top-banner">
+    <div class="container">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <a href="../../work.html" class="demo-back-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+          <span>Back to NEXUS LM Portfolio</span>
+        </a>
+        <span style="color: #66686A;">|</span>
+        <span style="color: #A9A99F;">Client Concept: <strong>Apex Horizons</strong> (Real Estate &amp; Architecture)</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <span style="font-size: 0.6875rem; color: #A9A99F;">Concept Demo by NEXUS LM</span>
+        <a href="../../contact.html" class="demo-badge">Build a Website Like This</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Real Estate Header -->
+  <header style="background: rgba(13, 17, 23, 0.95); border-bottom: 1px solid var(--re-border); position: sticky; top: 2.125rem; z-index: 30; backdrop-filter: blur(8px);">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; height: 5rem;">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <div style="width: 2.5rem; height: 2.5rem; background: var(--re-gold); color: #000; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-family: 'Cinzel', serif;">
+          AH
+        </div>
+        <div>
+          <div class="font-serif" style="font-size: 1.25rem; letter-spacing: 0.1em; color: #FFF; font-weight: 700;">APEX HORIZONS</div>
+          <div style="font-size: 0.625rem; font-family: var(--font-mono); text-transform: uppercase; color: var(--re-gold); letter-spacing: 0.15em;">Private Real Estate Office · Surat</div>
+        </div>
+      </div>
+
+      <nav style="display: flex; gap: 2rem; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em;" class="tx-nav">
+        <a href="#properties" style="color: var(--re-muted); text-decoration: none;">Curated Residences</a>
+        <a href="#locations" style="color: var(--re-muted); text-decoration: none;">Prime Enclaves</a>
+        <a href="#private-viewing" style="color: var(--re-muted); text-decoration: none;">Private Viewing</a>
+      </nav>
+
+      <a href="#private-viewing" class="re-btn-gold">Request Viewing</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section style="position: relative; padding: 7rem 0 5rem; border-bottom: 1px solid var(--re-border); overflow: hidden;">
+    <div style="position: absolute; inset: 0; z-index: 0; opacity: 0.25;">
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80" alt="Apex Horizons Architecture" style="width: 100%; height: 100%; object-fit: cover;" />
+    </div>
+    <div class="container" style="position: relative; z-index: 10; max-width: 48rem;">
+      <div style="display: inline-block; padding: 0.25rem 0.75rem; background: #21262D; border: 1px solid var(--re-border); border-radius: 4px; font-family: var(--font-mono); font-size: 0.6875rem; color: var(--re-gold); margin-bottom: 1.25rem;">
+        ULTRA-LUXURY ARCHITECTURAL RESIDENCES · SURAT
+      </div>
+      <h1 style="font-size: clamp(2.5rem, 5vw, 4.25rem); line-height: 1.1; color: #FFF; margin-bottom: 1.5rem;">
+        Living Refined Above <br />
+        <span style="color: var(--re-gold);">The Horizon.</span>
+      </h1>
+      <p style="font-size: 1.05rem; color: var(--re-muted); line-height: 1.8; margin-bottom: 2rem;">
+        Private estates, duplex riverfront penthouses, and cantilevered sky homes curated strictly for discerning owners across Surat’s premier addresses: Vesu, Dumas Road, and Piplod.
+      </p>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="#properties" class="re-btn-gold">Explore The Collection</a>
+        <a href="#private-viewing" class="re-btn-outline">Arrange Confidential Tour</a>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--re-border);">
+        <div>
+          <div style="font-size: 1.75rem; font-weight: 700; color: #FFF; font-family: 'Cinzel', serif;">₹180 Cr+</div>
+          <div style="font-size: 0.6875rem; color: var(--re-muted); text-transform: uppercase;">Portfolio Under Management</div>
+        </div>
+        <div>
+          <div style="font-size: 1.75rem; font-weight: 700; color: #FFF; font-family: 'Cinzel', serif;">100%</div>
+          <div style="font-size: 0.6875rem; color: var(--re-muted); text-transform: uppercase;">Clear RERA &amp; Title Verification</div>
+        </div>
+        <div>
+          <div style="font-size: 1.75rem; font-weight: 700; color: #FFF; font-family: 'Cinzel', serif;">Direct</div>
+          <div style="font-size: 0.6875rem; color: var(--re-muted); text-transform: uppercase;">Private Developer Access</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curated Properties Portfolio -->
+  <section id="properties" class="section" style="border-bottom: 1px solid var(--re-border);">
+    <div id="locations" style="position: relative; top: -5rem;"></div>
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 2.5rem;">
+        <div>
+          <div style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--re-gold); font-family: var(--font-mono); margin-bottom: 0.35rem;">
+            Featured Inventory
+          </div>
+          <h2 style="font-size: 2.25rem; color: #FFF;">Signature Residences</h2>
+        </div>
+
+        <!-- Filter Controls -->
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;" id="propFilters">
+          <button class="prop-filter-btn active" data-filter="all">All Residences</button>
+          <button class="prop-filter-btn" data-filter="penthouse">Penthouses</button>
+          <button class="prop-filter-btn" data-filter="villa">Private Villas</button>
+          <button class="prop-filter-btn" data-filter="apartment">Sky Apartments</button>
+        </div>
+      </div>
+
+      <!-- Properties Grid -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;" id="propContainer">
+        
+        <!-- Property 1 -->
+        <div class="prop-card" data-type="penthouse" style="background: var(--re-card); border: 1px solid var(--re-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div style="position: relative; height: 16rem;">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="The Sky Glass Penthouse" style="width: 100%; height: 100%; object-fit: cover;" />
+            <span style="position: absolute; top: 1rem; left: 1rem; background: rgba(13, 17, 23, 0.85); color: var(--re-gold); font-size: 0.6875rem; font-family: var(--font-mono); padding: 0.25rem 0.6rem; border-radius: 3px; border: 1px solid var(--re-border);">Vesu, Surat</span>
+            <span style="position: absolute; bottom: 1rem; right: 1rem; background: var(--re-gold); color: #000; font-size: 0.75rem; font-weight: 700; padding: 0.35rem 0.75rem; border-radius: 3px;">Ready for Possession</span>
+          </div>
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; flex: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+              <h3 style="font-size: 1.25rem; color: #FFF; margin: 0;">The Sky Glass Penthouse</h3>
+              <span style="font-family: 'Cinzel', serif; font-size: 1.25rem; font-weight: 700; color: var(--re-gold);">₹4.85 Cr</span>
+            </div>
+            <p style="font-size: 0.8125rem; color: var(--re-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+              Double-height duplex overlooking Tapi River with private temperature-controlled plunge pool, imported statuario marble, and dedicated private elevator.
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; padding: 0.75rem; background: #21262D; border-radius: 4px; font-size: 0.75rem; text-align: center; margin-bottom: 1.25rem;">
+              <div><strong>5</strong> Beds</div>
+              <div><strong>6</strong> Baths</div>
+              <div><strong>6,200</strong> Sq.Ft</div>
+            </div>
+            <a href="#private-viewing" class="re-btn-outline book-tour-btn" data-prop="The Sky Glass Penthouse (Vesu)" style="text-align: center; margin-top: auto;">Schedule VIP Viewing</a>
+          </div>
+        </div>
+
+        <!-- Property 2 -->
+        <div class="prop-card" data-type="villa" style="background: var(--re-card); border: 1px solid var(--re-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div style="position: relative; height: 16rem;">
+            <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80" alt="Aura Waterfront Villa" style="width: 100%; height: 100%; object-fit: cover;" />
+            <span style="position: absolute; top: 1rem; left: 1rem; background: rgba(13, 17, 23, 0.85); color: var(--re-gold); font-size: 0.6875rem; font-family: var(--font-mono); padding: 0.25rem 0.6rem; border-radius: 3px; border: 1px solid var(--re-border);">Dumas Road, Surat</span>
+            <span style="position: absolute; bottom: 1rem; right: 1rem; background: var(--re-gold); color: #000; font-size: 0.75rem; font-weight: 700; padding: 0.35rem 0.75rem; border-radius: 3px;">Independent Villa</span>
+          </div>
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; flex: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+              <h3 style="font-size: 1.25rem; color: #FFF; margin: 0;">Aura Waterfront Villa</h3>
+              <span style="font-family: 'Cinzel', serif; font-size: 1.25rem; font-weight: 700; color: var(--re-gold);">₹7.20 Cr</span>
+            </div>
+            <p style="font-size: 0.8125rem; color: var(--re-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+              Tropical modernist architecture with wrap-around landscaped private lawns, Poggenpohl kitchen, solar micro-grid, and internal cinema lounge.
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; padding: 0.75rem; background: #21262D; border-radius: 4px; font-size: 0.75rem; text-align: center; margin-bottom: 1.25rem;">
+              <div><strong>6</strong> Beds</div>
+              <div><strong>7</strong> Baths</div>
+              <div><strong>8,400</strong> Sq.Ft</div>
+            </div>
+            <a href="#private-viewing" class="re-btn-outline book-tour-btn" data-prop="Aura Waterfront Villa (Dumas Road)" style="text-align: center; margin-top: auto;">Schedule VIP Viewing</a>
+          </div>
+        </div>
+
+        <!-- Property 3 -->
+        <div class="prop-card" data-type="apartment" style="background: var(--re-card); border: 1px solid var(--re-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div style="position: relative; height: 16rem;">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Horizon Tower Sky Residence" style="width: 100%; height: 100%; object-fit: cover;" />
+            <span style="position: absolute; top: 1rem; left: 1rem; background: rgba(13, 17, 23, 0.85); color: var(--re-gold); font-size: 0.6875rem; font-family: var(--font-mono); padding: 0.25rem 0.6rem; border-radius: 3px; border: 1px solid var(--re-border);">Piplod, Surat</span>
+            <span style="position: absolute; bottom: 1rem; right: 1rem; background: var(--re-gold); color: #000; font-size: 0.75rem; font-weight: 700; padding: 0.35rem 0.75rem; border-radius: 3px;">Sky Residence</span>
+          </div>
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; flex: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+              <h3 style="font-size: 1.25rem; color: #FFF; margin: 0;">Horizon Sky Residence</h3>
+              <span style="font-family: 'Cinzel', serif; font-size: 1.25rem; font-weight: 700; color: var(--re-gold);">₹2.95 Cr</span>
+            </div>
+            <p style="font-size: 0.8125rem; color: var(--re-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+              Corner north-east facing luxury residence with 270-degree unhindered skyline views, wide 10-ft cantilevered deck, and soundproof double glazing.
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; padding: 0.75rem; background: #21262D; border-radius: 4px; font-size: 0.75rem; text-align: center; margin-bottom: 1.25rem;">
+              <div><strong>4</strong> Beds</div>
+              <div><strong>4</strong> Baths</div>
+              <div><strong>3,850</strong> Sq.Ft</div>
+            </div>
+            <a href="#private-viewing" class="re-btn-outline book-tour-btn" data-prop="Horizon Sky Residence (Piplod)" style="text-align: center; margin-top: auto;">Schedule VIP Viewing</a>
+          </div>
+        </div>
+
+        <!-- Property 4 -->
+        <div class="prop-card" data-type="apartment" style="background: var(--re-card); border: 1px solid var(--re-border); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column;">
+          <div style="position: relative; height: 16rem;">
+            <img src="https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80" alt="Pal Promenade Garden Home" style="width: 100%; height: 100%; object-fit: cover;" />
+            <span style="position: absolute; top: 1rem; left: 1rem; background: rgba(13, 17, 23, 0.85); color: var(--re-gold); font-size: 0.6875rem; font-family: var(--font-mono); padding: 0.25rem 0.6rem; border-radius: 3px; border: 1px solid var(--re-border);">Pal, Surat</span>
+            <span style="position: absolute; bottom: 1rem; right: 1rem; background: var(--re-gold); color: #000; font-size: 0.75rem; font-weight: 700; padding: 0.35rem 0.75rem; border-radius: 3px;">Garden Simplex</span>
+          </div>
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; flex: 1;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.5rem;">
+              <h3 style="font-size: 1.25rem; color: #FFF; margin: 0;">Pal Promenade Home</h3>
+              <span style="font-family: 'Cinzel', serif; font-size: 1.25rem; font-weight: 700; color: var(--re-gold);">₹1.85 Cr</span>
+            </div>
+            <p style="font-size: 0.8125rem; color: var(--re-muted); line-height: 1.6; margin-bottom: 1.25rem;">
+              Low-density botanical luxury project designed around central reflexology walkways, clubhouse gymnasium, and sensory playzones.
+            </p>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; padding: 0.75rem; background: #21262D; border-radius: 4px; font-size: 0.75rem; text-align: center; margin-bottom: 1.25rem;">
+              <div><strong>3</strong> Beds</div>
+              <div><strong>3</strong> Baths</div>
+              <div><strong>2,650</strong> Sq.Ft</div>
+            </div>
+            <a href="#private-viewing" class="re-btn-outline book-tour-btn" data-prop="Pal Promenade Home (Pal)" style="text-align: center; margin-top: auto;">Schedule VIP Viewing</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Confidential VIP Viewing Request Form -->
+  <section id="private-viewing" class="section">
+    <div class="container" style="max-width: 48rem;">
+      <div style="background: var(--re-card); border: 1px solid var(--re-border); border-radius: 8px; padding: 2.5rem;">
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <div style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.25em; color: var(--re-gold); font-family: var(--font-mono); margin-bottom: 0.5rem;">
+            Private Office Services
+          </div>
+          <h2 style="font-size: 2rem; color: #FFF; margin-bottom: 0.5rem;">Arrange a Confidential Viewing</h2>
+          <p style="font-size: 0.8125rem; color: var(--re-muted);">
+            Viewings are conducted privately with our senior estate partners. Strict confidentiality observed.
+          </p>
+        </div>
+
+        <form id="viewingForm" style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+            <div>
+              <label style="display: block; font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--re-muted); margin-bottom: 0.4rem;">Selected Property *</label>
+              <select id="propSelect" class="re-input">
+                <option value="The Sky Glass Penthouse (Vesu)">The Sky Glass Penthouse — Vesu (₹4.85 Cr)</option>
+                <option value="Aura Waterfront Villa (Dumas Road)">Aura Waterfront Villa — Dumas Road (₹7.20 Cr)</option>
+                <option value="Horizon Sky Residence (Piplod)">Horizon Sky Residence — Piplod (₹2.95 Cr)</option>
+                <option value="Pal Promenade Home (Pal)">Pal Promenade Home — Pal (₹1.85 Cr)</option>
+                <option value="General Bespoke Portfolio Consultation">General Bespoke Consultation</option>
+              </select>
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--re-muted); margin-bottom: 0.4rem;">Preferred Date *</label>
+              <input type="date" id="tourDate" required class="re-input" value="2026-11-22" />
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--re-muted); margin-bottom: 0.4rem;">Preferred Time</label>
+              <select id="tourTime" class="re-input">
+                <option>10:00 AM (Morning Natural Light)</option>
+                <option>03:30 PM (Afternoon)</option>
+                <option>05:30 PM (Sunset Hour)</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+            <div>
+              <label style="display: block; font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--re-muted); margin-bottom: 0.4rem;">Client Full Name *</label>
+              <input type="text" id="tourName" required placeholder="e.g. Vikramaditya Mehta" class="re-input" />
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--re-muted); margin-bottom: 0.4rem;">Phone / WhatsApp *</label>
+              <input type="tel" id="tourPhone" required placeholder="e.g. +91 98765 43210" class="re-input" />
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--re-muted); margin-bottom: 0.4rem;">Email Address</label>
+              <input type="email" id="tourEmail" placeholder="v.mehta@example.com" class="re-input" />
+            </div>
+          </div>
+
+          <div>
+            <label style="display: block; font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--re-muted); margin-bottom: 0.4rem;">Investment Intent or Architectural Specifications</label>
+            <input type="text" id="tourNotes" placeholder="e.g. Looking for ready-to-move river-facing duplex, immediate possession required" class="re-input" />
+          </div>
+
+          <div style="text-align: center; margin-top: 0.5rem;">
+            <button type="submit" class="re-btn-gold" style="width: 100%; max-width: 22rem; padding: 0.875rem 1.5rem;">
+              Request Private Tour
+            </button>
+          </div>
+        </form>
+
+        <!-- Confirmation State -->
+        <div id="tourSuccess" style="display: none; text-align: center; padding: 2rem 1rem;">
+          <div style="width: 3.5rem; height: 3.5rem; border-radius: 50%; background: var(--re-gold); color: #0D1117; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3 style="font-size: 1.5rem; color: #FFF; margin-bottom: 0.5rem;">Private Viewing Confirmed</h3>
+          <p style="font-size: 0.875rem; color: var(--re-muted); max-width: 32rem; margin: 0 auto 1.5rem; line-height: 1.6;" id="tourSuccessDesc">
+            Our Senior Estate Director will coordinate security clearance and itinerary via WhatsApp.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a id="tourWhatsAppHandoff" href="#" target="_blank" class="re-btn-gold">Connect with Managing Partner on WhatsApp</a>
+            <button id="tourResetBtn" class="re-btn-outline">Browse Other Residences</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Estate Footer -->
+  <footer style="background: #080B0E; border-top: 1px solid var(--re-border); padding: 3rem 0; text-align: center; font-size: 0.8125rem; color: var(--re-muted);">
+    <div class="container" style="display: flex; flex-direction: column; gap: 1rem; align-items: center;">
+      <div class="font-serif" style="font-size: 1.25rem; color: #FFF; letter-spacing: 0.1em;">APEX HORIZONS PRIVATE REAL ESTATE</div>
+      <div>Vesu Main Road, Surat, Gujarat 395007 · Private Office Desk: <a href="tel:+918734009367" style="color: var(--re-gold); text-decoration: none;">+91 87340 09367</a></div>
+      <div style="font-size: 0.6875rem; color: #484F58; border-top: 1px solid #161B22; padding-top: 1.5rem; width: 100%; max-width: 32rem;">
+        Concept demonstration created by NEXUS LM Web Development Services · Surat
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Property Filtering
+    const filterBtns = document.querySelectorAll('.prop-filter-btn');
+    const propCards = document.querySelectorAll('.prop-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+        propCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-type') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Tour Selection from Card
+    const propSelect = document.getElementById('propSelect');
+    const bookTourBtns = document.querySelectorAll('.book-tour-btn');
+    bookTourBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const propName = btn.getAttribute('data-prop');
+        for (let i = 0; i < propSelect.options.length; i++) {
+          if (propSelect.options[i].value.includes(propName.split(' ')[0])) {
+            propSelect.selectedIndex = i;
+            break;
+          }
+        }
+      });
+    });
+
+    // Viewing Form Handling
+    const form = document.getElementById('viewingForm');
+    const successBox = document.getElementById('tourSuccess');
+    const successDesc = document.getElementById('tourSuccessDesc');
+    const waLink = document.getElementById('tourWhatsAppHandoff');
+    const resetBtn = document.getElementById('tourResetBtn');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const prop = propSelect.value;
+      const date = document.getElementById('tourDate').value;
+      const time = document.getElementById('tourTime').value;
+      const name = document.getElementById('tourName').value.trim();
+      const phone = document.getElementById('tourPhone').value.trim();
+      const notes = document.getElementById('tourNotes').value.trim();
+
+      const text = `Hello Apex Horizons Private Desk, I would like to schedule a private viewing:%0A- Property: ${encodeURIComponent(prop)}%0A- Client: ${encodeURIComponent(name)}%0A- Date & Time: ${encodeURIComponent(date)} at ${encodeURIComponent(time)}%0A- Contact: ${encodeURIComponent(phone)}${notes ? '%0A- Notes: ' + encodeURIComponent(notes) : ''}`;
+
+      waLink.href = `https://wa.me/916355049071?text=${text}`;
+      successDesc.innerHTML = `Viewing itinerary scheduled for <strong>${name}</strong> for <strong>${prop}</strong> on <strong>${date}</strong> (${time}). Click below to confirm directly with our Managing Partner on WhatsApp.`;
+
+      form.style.display = 'none';
+      successBox.style.display = 'block';
+    });
+
+    resetBtn.addEventListener('click', () => {
+      form.reset();
+      form.style.display = 'flex';
+      successBox.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

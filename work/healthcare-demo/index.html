@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PulseCare Multi-Speciality Clinic — OPD &amp; Specialist Care | Surat</title>
+  <meta name="description" content="PulseCare Multi-Speciality Hospital in Surat. Certified specialist physicians, OPD consult scheduling, diagnostic lab, and instant appointment booking." />
+  <link rel="icon" type="image/png" href="../../favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css" />
+  <style>
+    :root {
+      --hc-bg: #F8FAFC;
+      --hc-card: #FFFFFF;
+      --hc-primary: #0284C7;
+      --hc-primary-dark: #0369A1;
+      --hc-border: #E2E8F0;
+      --hc-text: #0F172A;
+      --hc-muted: #64748B;
+    }
+    body { background-color: var(--hc-bg); color: var(--hc-text); font-family: 'Inter', sans-serif; margin: 0; }
+    .hc-btn-primary { background: var(--hc-primary); color: #FFF; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.65rem 1.25rem; border-radius: 6px; text-decoration: none; display: inline-block; border: none; cursor: pointer; transition: background 0.2s; }
+    .hc-btn-primary:hover { background: var(--hc-primary-dark); }
+    .dept-tab-btn { background: #FFFFFF; color: var(--hc-muted); border: 1px solid var(--hc-border); padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.75rem; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+    .dept-tab-btn.active { background: var(--hc-primary); color: #FFF; border-color: var(--hc-primary); }
+    .hc-input { width: 100%; box-sizing: border-box; background: #FFF; border: 1px solid var(--hc-border); color: var(--hc-text); padding: 0.65rem 0.85rem; border-radius: 6px; font-size: 0.8125rem; outline: none; }
+    .hc-input:focus { border-color: var(--hc-primary); }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Demo Top Banner -->
+  <div class="demo-top-banner">
+    <div class="container">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <a href="../../work.html" class="demo-back-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+          <span>Back to NEXUS LM Portfolio</span>
+        </a>
+        <span style="color: #66686A;">|</span>
+        <span style="color: #A9A99F;">Client Concept: <strong>PulseCare Hospital</strong> (Healthcare &amp; Clinic)</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <span style="font-size: 0.6875rem; color: #A9A99F;">Concept Demo by NEXUS LM</span>
+        <a href="../../contact.html" class="demo-badge">Build a Website Like This</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Healthcare Header -->
+  <header style="background: rgba(255, 255, 255, 0.95); border-bottom: 1px solid var(--hc-border); position: sticky; top: 2.125rem; z-index: 30; backdrop-filter: blur(8px);">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; height: 5rem;">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <div style="width: 2.5rem; height: 2.5rem; border-radius: 8px; background: #E0F2FE; color: var(--hc-primary); display: flex; align-items: center; justify-content: center;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+        </div>
+        <div>
+          <div style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 800; color: #0C4A6E; letter-spacing: -0.01em;">PULSECARE</div>
+          <div style="font-size: 0.625rem; font-family: var(--font-mono); text-transform: uppercase; color: var(--hc-muted); letter-spacing: 0.1em;">Multi-Speciality Hospital · Surat</div>
+        </div>
+      </div>
+
+      <nav style="display: flex; gap: 2rem; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;" class="tx-nav">
+        <a href="#specialities" style="color: var(--hc-muted); text-decoration: none;">Specialities</a>
+        <a href="#doctors" style="color: var(--hc-muted); text-decoration: none;">Consultants</a>
+        <a href="#booking" style="color: var(--hc-muted); text-decoration: none;">OPD Schedule</a>
+        <a href="#emergency" style="color: #DC2626; text-decoration: none;">Emergency 24x7</a>
+      </nav>
+
+      <a href="#booking" class="hc-btn-primary">Book Consultation</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="section" style="border-bottom: 1px solid var(--hc-border); background: linear-gradient(180deg, #F0F9FF 0%, #F8FAFC 100%);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: center;">
+        <div>
+          <div style="display: inline-block; padding: 0.25rem 0.75rem; background: #E0F2FE; border-radius: 4px; font-family: var(--font-mono); font-size: 0.6875rem; font-weight: 700; color: var(--hc-primary-dark); margin-bottom: 1rem;">
+            NABH ACCREDITED STANDARDS · VESU &amp; CITY LIGHT, SURAT
+          </div>
+          <h1 style="font-size: clamp(2.25rem, 4vw, 3.5rem); line-height: 1.15; color: #0C4A6E; margin-bottom: 1.25rem;">
+            Evidence-Based Medicine. Compassionate Specialist Care.
+          </h1>
+          <p style="font-size: 1rem; color: var(--hc-muted); line-height: 1.7; margin-bottom: 1.75rem;">
+            Equipped with state-of-the-art diagnostic imaging, high-dependency ICU units, and 28+ leading medical specialists offering seamless outpatient consultations and surgical care.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;" id="emergency">
+            <a href="#booking" class="hc-btn-primary">Book OPD Token Online</a>
+            <a href="tel:+918734009367" class="btn btn-secondary" style="font-size: 0.75rem;">Emergency Helpline: +91 87340 09367</a>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--hc-border);">
+            <div>
+              <div style="font-size: 1.5rem; font-weight: 800; color: #0C4A6E;">28+</div>
+              <div style="font-size: 0.6875rem; color: var(--hc-muted); text-transform: uppercase;">Full-Time Doctors</div>
+            </div>
+            <div>
+              <div style="font-size: 1.5rem; font-weight: 800; color: #0C4A6E;">15 Mins</div>
+              <div style="font-size: 0.6875rem; color: var(--hc-muted); text-transform: uppercase;">Average Wait Time</div>
+            </div>
+            <div>
+              <div style="font-size: 1.5rem; font-weight: 800; color: #0C4A6E;">100%</div>
+              <div style="font-size: 0.6875rem; color: var(--hc-muted); text-transform: uppercase;">Digital Health Records</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=800&q=80" alt="PulseCare Hospital Ward" style="width: 100%; border-radius: 8px; border: 1px solid var(--hc-border); box-shadow: var(--shadow-subtle);" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Specialist Doctor Directory -->
+  <section id="doctors" class="section" style="border-bottom: 1px solid var(--hc-border);">
+    <div id="specialities" style="position: relative; top: -5rem;"></div>
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 2rem;">
+        <div>
+          <div style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--hc-primary); font-family: var(--font-mono); margin-bottom: 0.35rem;">
+            Consulting Faculties
+          </div>
+          <h2 style="font-size: 2rem; color: #0C4A6E;">Medical Specialists &amp; Surgeons</h2>
+        </div>
+        <!-- Department Filter -->
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;" id="deptTabs">
+          <button class="dept-tab-btn active" data-dept="all">All Specialties</button>
+          <button class="dept-tab-btn" data-dept="medicine">Internal Medicine</button>
+          <button class="dept-tab-btn" data-dept="ortho">Orthopedics</button>
+          <button class="dept-tab-dept" data-dept="cardio" style="display:none"></button>
+          <button class="dept-tab-btn" data-dept="cardio">Cardiology</button>
+          <button class="dept-tab-btn" data-dept="peds">Pediatrics</button>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;" id="doctorsGrid">
+        
+        <!-- Doctor 1 -->
+        <div class="doc-card" data-dept="medicine" style="background: var(--hc-card); border: 1px solid var(--hc-border); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column;">
+          <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=200&q=80" alt="Dr. Rajesh Sheth" style="width: 4rem; height: 4rem; border-radius: 50%; object-fit: cover; border: 2px solid #E0F2FE;" />
+            <div>
+              <h3 style="font-size: 1.05rem; font-weight: 700; color: #0C4A6E; margin: 0 0 0.2rem;">Dr. Rajesh Sheth</h3>
+              <div style="font-size: 0.6875rem; color: var(--hc-primary-dark); font-weight: 600;">MBBS, MD (Internal Medicine)</div>
+              <div style="font-size: 0.6875rem; color: var(--hc-muted);">18 Years Experience</div>
+            </div>
+          </div>
+          <p style="font-size: 0.8125rem; color: var(--hc-muted); line-height: 1.5; margin-bottom: 1rem; flex: 1;">
+            Senior physician specializing in chronic lifestyle disease management, diabetes reversal protocols, and hypertension.
+          </p>
+          <div style="background: #F1F5F9; padding: 0.65rem 0.85rem; border-radius: 4px; font-size: 0.75rem; margin-bottom: 1rem; display: flex; justify-content: space-between;">
+            <span style="color: var(--hc-muted);">OPD: Mon–Sat 9:30 AM–1 PM</span>
+            <strong style="color: #0C4A6E;">Fee: ₹800</strong>
+          </div>
+          <button class="select-doc-btn hc-btn-primary" data-doc="Dr. Rajesh Sheth (Internal Medicine)">Book with Dr. Sheth</button>
+        </div>
+
+        <!-- Doctor 2 -->
+        <div class="doc-card" data-dept="ortho" style="background: var(--hc-card); border: 1px solid var(--hc-border); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column;">
+          <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+            <img src="https://images.unsplash.com/photo-1594824813583-71861036814c?auto=format&fit=crop&w=200&q=80" alt="Dr. Shalini Deshmukh" style="width: 4rem; height: 4rem; border-radius: 50%; object-fit: cover; border: 2px solid #E0F2FE;" />
+            <div>
+              <h3 style="font-size: 1.05rem; font-weight: 700; color: #0C4A6E; margin: 0 0 0.2rem;">Dr. Shalini Deshmukh</h3>
+              <div style="font-size: 0.6875rem; color: var(--hc-primary-dark); font-weight: 600;">MBBS, MS (Ortho), Fellowship Germany</div>
+              <div style="font-size: 0.6875rem; color: var(--hc-muted);">14 Years Experience</div>
+            </div>
+          </div>
+          <p style="font-size: 0.8125rem; color: var(--hc-muted); line-height: 1.5; margin-bottom: 1rem; flex: 1;">
+            Consultant orthopedic surgeon with expertise in minimally invasive knee preservation and athletic sports trauma.
+          </p>
+          <div style="background: #F1F5F9; padding: 0.65rem 0.85rem; border-radius: 4px; font-size: 0.75rem; margin-bottom: 1rem; display: flex; justify-content: space-between;">
+            <span style="color: var(--hc-muted);">OPD: Mon, Wed, Fri 2–6 PM</span>
+            <strong style="color: #0C4A6E;">Fee: ₹1,000</strong>
+          </div>
+          <button class="select-doc-btn hc-btn-primary" data-doc="Dr. Shalini Deshmukh (Orthopedics)">Book with Dr. Deshmukh</button>
+        </div>
+
+        <!-- Doctor 3 -->
+        <div class="doc-card" data-dept="cardio" style="background: var(--hc-card); border: 1px solid var(--hc-border); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column;">
+          <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=200&q=80" alt="Dr. Vivek Varma" style="width: 4rem; height: 4rem; border-radius: 50%; object-fit: cover; border: 2px solid #E0F2FE;" />
+            <div>
+              <h3 style="font-size: 1.05rem; font-weight: 700; color: #0C4A6E; margin: 0 0 0.2rem;">Dr. Vivek Varma</h3>
+              <div style="font-size: 0.6875rem; color: var(--hc-primary-dark); font-weight: 600;">MBBS, MD, DM (Cardiology), FACC</div>
+              <div style="font-size: 0.6875rem; color: var(--hc-muted);">16 Years Experience</div>
+            </div>
+          </div>
+          <p style="font-size: 0.8125rem; color: var(--hc-muted); line-height: 1.5; margin-bottom: 1rem; flex: 1;">
+            Interventional cardiologist with deep expertise in non-invasive coronary imaging, preventive cardiac risks and echocardiography.
+          </p>
+          <div style="background: #F1F5F9; padding: 0.65rem 0.85rem; border-radius: 4px; font-size: 0.75rem; margin-bottom: 1rem; display: flex; justify-content: space-between;">
+            <span style="color: var(--hc-muted);">OPD: Tue, Thu, Sat 10 AM–3 PM</span>
+            <strong style="color: #0C4A6E;">Fee: ₹1,200</strong>
+          </div>
+          <button class="select-doc-btn hc-btn-primary" data-doc="Dr. Vivek Varma (Cardiology)">Book with Dr. Varma</button>
+        </div>
+
+        <!-- Doctor 4 -->
+        <div class="doc-card" data-dept="peds" style="background: var(--hc-card); border: 1px solid var(--hc-border); border-radius: 8px; padding: 1.5rem; display: flex; flex-direction: column;">
+          <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1rem;">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=200&q=80" alt="Dr. Neha Kulkarni" style="width: 4rem; height: 4rem; border-radius: 50%; object-fit: cover; border: 2px solid #E0F2FE;" />
+            <div>
+              <h3 style="font-size: 1.05rem; font-weight: 700; color: #0C4A6E; margin: 0 0 0.2rem;">Dr. Neha Kulkarni</h3>
+              <div style="font-size: 0.6875rem; color: var(--hc-primary-dark); font-weight: 600;">MBBS, MD (Pediatrics), DNB</div>
+              <div style="font-size: 0.6875rem; color: var(--hc-muted);">11 Years Experience</div>
+            </div>
+          </div>
+          <p style="font-size: 0.8125rem; color: var(--hc-muted); line-height: 1.5; margin-bottom: 1rem; flex: 1;">
+            Dedicated child specialist focusing on neonatal health, vaccination calendars, pediatric asthma, and developmental milestones.
+          </p>
+          <div style="background: #F1F5F9; padding: 0.65rem 0.85rem; border-radius: 4px; font-size: 0.75rem; margin-bottom: 1rem; display: flex; justify-content: space-between;">
+            <span style="color: var(--hc-muted);">OPD: Mon–Sat 11 AM–4 PM</span>
+            <strong style="color: #0C4A6E;">Fee: ₹700</strong>
+          </div>
+          <button class="select-doc-btn hc-btn-primary" data-doc="Dr. Neha Kulkarni (Pediatrics)">Book with Dr. Kulkarni</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Booking Section -->
+  <section id="booking" class="section">
+    <div class="container" style="max-width: 46rem;">
+      <div style="background: var(--hc-card); border: 1px solid var(--hc-border); border-radius: 8px; padding: 2.5rem; box-shadow: var(--shadow-subtle);">
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <div style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--hc-primary); font-family: var(--font-mono); margin-bottom: 0.35rem;">
+            OPD Scheduling
+          </div>
+          <h2 style="font-size: 2rem; color: #0C4A6E; margin-bottom: 0.5rem;">Book an Appointment</h2>
+          <p style="font-size: 0.8125rem; color: var(--hc-muted);">
+            Tokens are assigned immediately. Hospital desk sends confirmation and preparation directions via WhatsApp.
+          </p>
+        </div>
+
+        <form id="clinicBookingForm" style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+            <div>
+              <label style="display: block; font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--hc-muted); margin-bottom: 0.35rem;">Consulting Doctor *</label>
+              <select id="docSelect" class="hc-input">
+                <option value="Dr. Rajesh Sheth (Internal Medicine)">Dr. Rajesh Sheth — Internal Medicine (₹800)</option>
+                <option value="Dr. Shalini Deshmukh (Orthopedics)">Dr. Shalini Deshmukh — Orthopedics (₹1,000)</option>
+                <option value="Dr. Vivek Varma (Cardiology)">Dr. Vivek Varma — Cardiology (₹1,200)</option>
+                <option value="Dr. Neha Kulkarni (Pediatrics)">Dr. Neha Kulkarni — Pediatrics (₹700)</option>
+              </select>
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--hc-muted); margin-bottom: 0.35rem;">Preferred Date *</label>
+              <input type="date" id="bookDate" required class="hc-input" value="2026-11-21" />
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--hc-muted); margin-bottom: 0.35rem;">Preferred Slot *</label>
+              <select id="bookSlot" class="hc-input">
+                <option>10:00 AM – 10:30 AM (Morning)</option>
+                <option>11:30 AM – 12:00 PM (Morning)</option>
+                <option>02:30 PM – 03:00 PM (Afternoon)</option>
+                <option>05:00 PM – 05:30 PM (Evening)</option>
+              </select>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+            <div>
+              <label style="display: block; font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--hc-muted); margin-bottom: 0.35rem;">Patient Full Name *</label>
+              <input type="text" id="patName" required placeholder="e.g. Ramesh Patel" class="hc-input" />
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--hc-muted); margin-bottom: 0.35rem;">WhatsApp Number *</label>
+              <input type="tel" id="patPhone" required placeholder="e.g. +91 98765 43210" class="hc-input" />
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--hc-muted); margin-bottom: 0.35rem;">Patient Age &amp; Gender</label>
+              <input type="text" id="patAge" placeholder="e.g. 45 M" class="hc-input" />
+            </div>
+          </div>
+
+          <div>
+            <label style="display: block; font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--hc-muted); margin-bottom: 0.35rem;">Symptoms or Clinical Concern</label>
+            <input type="text" id="patSymptoms" placeholder="e.g. Persistent knee stiffness after jogging, routine blood pressure check" class="hc-input" />
+          </div>
+
+          <div style="text-align: center; margin-top: 0.5rem;">
+            <button type="submit" class="hc-btn-primary" style="width: 100%; max-width: 20rem; padding: 0.85rem 1.5rem;">
+              Generate Digital OPD Token
+            </button>
+          </div>
+        </form>
+
+        <!-- Booking Result Card -->
+        <div id="bookingResult" style="display: none; text-align: center; padding: 2rem 1rem;">
+          <div style="width: 3.5rem; height: 3.5rem; border-radius: 50%; background: #D1FAE5; color: #059669; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3 style="font-size: 1.5rem; color: #0C4A6E; margin-bottom: 0.5rem;">OPD Token Generated</h3>
+          <div style="font-size: 1.25rem; font-family: var(--font-mono); font-weight: 800; color: var(--hc-primary); margin-bottom: 1rem;" id="tokenDisplay">
+            TOKEN: PC-8924
+          </div>
+          <p style="font-size: 0.875rem; color: var(--hc-muted); max-width: 30rem; margin: 0 auto 1.5rem; line-height: 1.6;" id="bookingDetails">
+            Details will appear here.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a id="hospitalWaHandoff" href="#" target="_blank" class="hc-btn-primary">Confirm on Hospital WhatsApp</a>
+            <button id="bookAnotherBtn" class="btn btn-secondary">Schedule Another Visit</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Hospital Footer -->
+  <footer style="background: #0F172A; color: #94A3B8; padding: 3rem 0; font-size: 0.8125rem;">
+    <div class="container" style="display: flex; flex-direction: column; gap: 1rem; align-items: center; text-align: center;">
+      <div style="font-size: 1.15rem; color: #FFF; font-weight: 700;">PulseCare Multi-Speciality Hospital</div>
+      <div>City Light Road &amp; Vesu Hub, Surat, Gujarat 395007 · Central Helpline: <a href="tel:+918734009367" style="color: #38BDF8; text-decoration: none;">+91 87340 09367</a></div>
+      <div style="font-size: 0.6875rem; color: #64748B; border-top: 1px solid #1E293B; padding-top: 1.5rem; width: 100%; max-width: 32rem;">
+        Concept demonstration created by NEXUS LM Web Development Services · Surat
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Department Filtering
+    const deptTabs = document.querySelectorAll('.dept-tab-btn');
+    const docCards = document.querySelectorAll('.doc-card');
+    const docSelect = document.getElementById('docSelect');
+
+    deptTabs.forEach(btn => {
+      btn.addEventListener('click', () => {
+        deptTabs.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const dept = btn.getAttribute('data-dept');
+        docCards.forEach(card => {
+          if (dept === 'all' || card.getAttribute('data-dept') === dept) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Select Doctor Button Handler
+    const selectDocBtns = document.querySelectorAll('.select-doc-btn');
+    selectDocBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const docName = btn.getAttribute('data-doc');
+        for (let i = 0; i < docSelect.options.length; i++) {
+          if (docSelect.options[i].value.includes(docName.split(' ')[1])) {
+            docSelect.selectedIndex = i;
+            break;
+          }
+        }
+        document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Form submission
+    const form = document.getElementById('clinicBookingForm');
+    const resultBox = document.getElementById('bookingResult');
+    const detailsP = document.getElementById('bookingDetails');
+    const tokenDisplay = document.getElementById('tokenDisplay');
+    const waLink = document.getElementById('hospitalWaHandoff');
+    const anotherBtn = document.getElementById('bookAnotherBtn');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const doctor = docSelect.value;
+      const date = document.getElementById('bookDate').value;
+      const slot = document.getElementById('bookSlot').value;
+      const name = document.getElementById('patName').value.trim();
+      const phone = document.getElementById('patPhone').value.trim();
+      const age = document.getElementById('patAge').value.trim();
+      const symptoms = document.getElementById('patSymptoms').value.trim();
+
+      const tokenNum = 'PC-' + Math.floor(1000 + Math.random() * 9000);
+      tokenDisplay.textContent = `TOKEN NUMBER: ${tokenNum}`;
+
+      const text = `Hello PulseCare Hospital Desk, I have booked an OPD Token:%0A- Token: ${tokenNum}%0A- Patient: ${encodeURIComponent(name)}${age ? ' (' + encodeURIComponent(age) + ')' : ''}%0A- Doctor: ${encodeURIComponent(doctor)}%0A- Date & Slot: ${encodeURIComponent(date)} ${encodeURIComponent(slot)}%0A- Contact: ${encodeURIComponent(phone)}${symptoms ? '%0A- Symptoms: ' + encodeURIComponent(symptoms) : ''}`;
+
+      waLink.href = `https://wa.me/916355049071?text=${text}`;
+      detailsP.innerHTML = `Token <strong>${tokenNum}</strong> registered for <strong>${name}</strong> with <strong>${doctor}</strong> on <strong>${date}</strong> (${slot}). Reach the consultation reception 10 minutes prior to slot.`;
+
+      form.style.display = 'none';
+      resultBox.style.display = 'block';
+    });
+
+    anotherBtn.addEventListener('click', () => {
+      form.reset();
+      form.style.display = 'flex';
+      resultBox.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

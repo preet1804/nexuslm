@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { 
-  Phone, 
-  MessageSquare, 
-  MapPin, 
-  Globe, 
-  Mail, 
-  Check, 
-  ShieldCheck, 
+import {
+  Phone,
+  MessageSquare,
+  MapPin,
+  Globe,
+  Mail,
+  Check,
+  ShieldCheck,
   Send,
   Clock,
   ArrowUpRight

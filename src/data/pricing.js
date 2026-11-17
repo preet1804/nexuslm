@@ -68,3 +68,4 @@ export const pricingPlans = [
 ];
 
 export const pricingNotice = "Transparent Pricing Policy: All package costs cover end-to-end design, custom development, testing, and launch assistance. Third-party recurring costs such as domain registration, cloud hosting, commercial plugin licenses, or payment gateway transaction charges are billed directly by respective providers unless explicitly bundled in a custom agreement.";
+
