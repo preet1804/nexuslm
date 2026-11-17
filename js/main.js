@@ -19,22 +19,48 @@ document.addEventListener('DOMContentLoaded', () => {
     handleScroll();
   }
 
-  // 2. Mobile Navigation Drawer
+  // 2. Mobile Navigation Drawer Controller
   const mobileToggle = document.querySelector('.mobile-nav-toggle');
   const mobileDrawer = document.querySelector('.mobile-drawer');
 
-  if (mobileToggle && mobileDrawer) {
-    mobileToggle.addEventListener('click', () => {
+  if (mobileToggle && mobileDrawer && !mobileToggle.dataset.navBound) {
+    mobileToggle.dataset.navBound = 'true';
+
+    const closeDrawer = () => {
+      mobileDrawer.classList.remove('open');
+      mobileToggle.setAttribute('aria-expanded', 'false');
+    };
+
+    const toggleDrawer = (e) => {
+      if (e) e.stopPropagation();
       const isOpen = mobileDrawer.classList.toggle('open');
-      mobileToggle.setAttribute('aria-expanded', isOpen);
+      mobileToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    };
+
+    mobileToggle.addEventListener('click', toggleDrawer);
+
+    // Close mobile drawer when clicking outside
+    document.addEventListener('click', (e) => {
+      if (mobileDrawer.classList.contains('open')) {
+        if (!mobileToggle.contains(e.target) && !mobileDrawer.contains(e.target)) {
+          closeDrawer();
+        }
+      }
     });
 
-    // Close mobile drawer if clicking outside
-    document.addEventListener('click', (e) => {
-      if (!mobileToggle.contains(e.target) && !mobileDrawer.contains(e.target)) {
-        mobileDrawer.classList.remove('open');
-        mobileToggle.setAttribute('aria-expanded', 'false');
+    // Close drawer when pressing Escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileDrawer.classList.contains('open')) {
+        closeDrawer();
+        mobileToggle.focus();
       }
+    });
+
+    // Auto-close drawer when any link inside is clicked
+    mobileDrawer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        closeDrawer();
+      });
     });
   }
 

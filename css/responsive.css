@@ -1,13 +1,111 @@
 /* ==========================================================================
    NEXUS LM — Dedicated Responsive Stylesheet
-   Pure CSS3 — Breakpoints: 360px, 390px, 430px, 640px, 768px, 1024px, 1440px, 1920px
+   Pure CSS3 — Breakpoints: 320px, 360px, 375px, 390px, 414px, 430px, 640px, 768px, 1024px, 1440px, 1920px
    ========================================================================== */
 
-/* Mobile Base (360px - 430px) */
+/* Section Spacing Standard */
+.section {
+  padding: 5rem 0;
+}
+
+.section-sm {
+  padding: 3rem 0;
+}
+
+.section-header {
+  margin-bottom: 3rem;
+}
+
+/* Grids & Layout Containers */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.service-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+.contact-main-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.plan-selector-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+/* Table Responsiveness */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-subtle);
+  background: #FFFFFF;
+}
+
+.table-responsive table {
+  width: 100%;
+  min-width: 620px;
+  border-collapse: collapse;
+}
+
+.mobile-swipe-hint {
+  display: none;
+}
+
+/* Mobile-First Query: Standard Mobile Devices (max-width: 640px) */
 @media (max-width: 640px) {
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .nav-container {
+    height: 3.75rem;
+  }
+
+  .brand-logo img {
+    height: 1.875rem;
   }
 
   .site-header .nav-menu,
@@ -19,39 +117,173 @@
     display: flex;
   }
 
-  .heading-display {
-    font-size: 2.125rem;
-    line-height: 1.12;
-  }
-
-  .heading-section {
-    font-size: 1.625rem;
-  }
-
   .section {
-    padding: 3.5rem 0;
+    padding: 2.75rem 0;
   }
 
   .section-sm {
-    padding: 2.25rem 0;
+    padding: 1.75rem 0;
+  }
+
+  .heading-display {
+    font-size: clamp(2rem, 7.5vw, 2.75rem);
+    line-height: 1.12;
+    word-break: break-word;
+  }
+
+  .heading-section {
+    font-size: clamp(1.4rem, 5.5vw, 1.875rem);
+    line-height: 1.18;
+    word-break: break-word;
+  }
+
+  .card {
+    padding: 1.25rem !important;
   }
 
   .form-row-2 {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+
+  .form-control {
+    font-size: 1rem;
+    min-height: 44px;
+  }
+
+  .btn {
+    min-height: 44px;
+  }
+
+  .mobile-swipe-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 0.6875rem;
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* Compact Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .hero-actions .btn {
+    width: 100% !important;
+    justify-content: center;
+  }
+
+  .cta-actions {
+    flex-direction: column !important;
+    width: 100% !important;
+  }
+
+  .cta-actions .btn {
+    width: 100% !important;
+    justify-content: center;
+  }
+
+  .plan-selector-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.5rem;
+  }
+
+  .plan-selector-btn {
+    width: 100%;
+    min-height: 48px;
+    padding: 0.625rem !important;
+  }
+
+  .mockup-header-tag {
+    display: none !important;
+  }
+
+  .mockup-header-url {
+    width: 70% !important;
+  }
+
+  .demo-banner-subtext {
+    display: none !important;
+  }
+
+  .demo-stat-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.5rem !important;
+  }
+
+  .demo-stat-grid > div > div:first-child {
+    font-size: 1.25rem !important;
+  }
+}
+
+/* Ultra-Compact Mobile (max-width: 360px) */
+@media (max-width: 360px) {
+  .demo-stat-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+    text-align: center;
+  }
+  .container {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+  }
+
+  .nav-container {
+    height: 3.5rem;
+  }
+
+  .brand-logo img {
+    height: 1.625rem;
+  }
+
+  .card {
+    padding: 1rem !important;
+  }
+
+  .heading-display {
+    font-size: 1.85rem !important;
+  }
+
+  .heading-section {
+    font-size: 1.35rem !important;
+  }
+
+  .btn {
+    padding: 0.6875rem 1rem;
+    font-size: 0.6875rem;
+  }
+}
+
+/* Tablet & Phablet (max-width: 768px) */
+@media (max-width: 768px) {
+  .tx-nav {
+    display: none !important;
+  }
+
+  .about-grid {
     grid-template-columns: 1fr !important;
   }
 
   .contact-main-grid {
     grid-template-columns: 1fr !important;
   }
-
-  .table-responsive {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
 }
 
-/* Tablet (641px - 1023px) */
+/* Tablet Screens (641px - 1023px) */
 @media (min-width: 641px) and (max-width: 1023px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .grid-3 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -60,12 +292,16 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .service-detail-grid {
+    grid-template-columns: 1.2fr 1fr;
+  }
+
   .section {
-    padding: 4.5rem 0;
+    padding: 4rem 0;
   }
 }
 
-/* Desktop Standard (1024px - 1439px) */
+/* Medium Desktop & Up (min-width: 1024px) */
 @media (min-width: 1024px) {
   .site-header .nav-menu {
     display: flex;
@@ -75,6 +311,10 @@
     display: none;
   }
 
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .grid-3 {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -82,9 +322,29 @@
   .grid-4 {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .hero-grid {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 3.5rem;
+  }
+
+  .service-detail-grid {
+    grid-template-columns: 1.25fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .contact-main-grid {
+    grid-template-columns: 1fr 1.35fr;
+    gap: 3rem;
+  }
+
+  .about-grid {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+  }
 }
 
-/* Wide & Ultra-Wide Desktop (1440px - 1920px) */
+/* Wide Screens (min-width: 1440px) */
 @media (min-width: 1440px) {
   .container {
     max-width: 1320px;
