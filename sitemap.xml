@@ -38,6 +38,12 @@
   </url>
   <!-- Demos -->
   <url>
+    <loc>https://nexuslm.in/work/real-estate</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nexuslm.in/work/textile-demo</loc>
     <priority>0.7</priority>
   </url>

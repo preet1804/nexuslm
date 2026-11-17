@@ -1,0 +1,92 @@
+/* ==========================================================================
+   NEXUS LM — Dedicated Responsive Stylesheet
+   Pure CSS3 — Breakpoints: 360px, 390px, 430px, 640px, 768px, 1024px, 1440px, 1920px
+   ========================================================================== */
+
+/* Mobile Base (360px - 430px) */
+@media (max-width: 640px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .site-header .nav-menu,
+  .site-header .nav-actions .btn-primary {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .heading-display {
+    font-size: 2.125rem;
+    line-height: 1.12;
+  }
+
+  .heading-section {
+    font-size: 1.625rem;
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+
+  .section-sm {
+    padding: 2.25rem 0;
+  }
+
+  .form-row-2 {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact-main-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* Tablet (641px - 1023px) */
+@media (min-width: 641px) and (max-width: 1023px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section {
+    padding: 4.5rem 0;
+  }
+}
+
+/* Desktop Standard (1024px - 1439px) */
+@media (min-width: 1024px) {
+  .site-header .nav-menu {
+    display: flex;
+  }
+
+  .mobile-nav-toggle {
+    display: none;
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Wide & Ultra-Wide Desktop (1440px - 1920px) */
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+}

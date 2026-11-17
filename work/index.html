@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selected Work &amp; Architecture Lab — NEXUS LM Web Development</title>
+  <meta name="description" content="Explore live concept demonstrations developed by NEXUS LM across textile manufacturing, dining &amp; hospitality, healthcare clinics, luxury real estate, and facility care." />
+  <link rel="icon" type="image/png" href="../favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="../index.html" class="brand-logo" aria-label="NEXUS LM Home">
+        <img src="../images/logo-horizontal.png" alt="NEXUS LM Logo" style="height: 2rem; width: auto;" />
+      </a>
+
+      <nav class="nav-menu" aria-label="Primary Navigation">
+        <a href="../index.html">Home</a>
+        <a href="../services.html">Services</a>
+        <a href="index.html" class="active">Our Work</a>
+        <a href="../about.html">About</a>
+        <a href="../pricing.html">Pricing</a>
+        <a href="../contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="btn btn-primary js-open-quote" data-plan="booking">Get a Quote</button>
+        <button type="button" class="mobile-nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" aria-label="Mobile Navigation Drawer">
+    <ul class="mobile-menu-list">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../services.html">Services</a></li>
+      <li><a href="index.html" class="active">Our Work</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../pricing.html">Pricing</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+      <button type="button" class="btn btn-primary js-open-quote" style="width: 100%;">Get a Quote</button>
+      <a href="https://wa.me/916355049071" class="btn btn-secondary" style="width: 100%;">WhatsApp Us</a>
+    </div>
+  </div>
+
+  <!-- Hero Banner -->
+  <section class="section" style="padding-bottom: 2rem;">
+    <div class="container">
+      <div style="display: flex; flex-direction: column; gap: 1rem; max-width: 48rem;">
+        <span class="eyebrow">Project Studio &amp; Architecture Lab</span>
+        <h1 class="heading-display">
+          Selected Work &amp; <br />
+          <span style="color: var(--text-secondary);">Digital Experiences.</span>
+        </h1>
+        <p style="font-size: 1.125rem;">
+          Explore how we design and develop digital experiences for different industries. Every demonstration below is an authentic, internally coded, fully functioning website running directly inside the NEXUS LM project.
+        </p>
+
+        <!-- Portfolio Disclaimer Notice -->
+        <div style="margin-top: 1rem; padding: 1.25rem 1.5rem; border-radius: var(--radius-sm); border: 1px solid #FCD34D; background: #FEF9C3; color: #78350F; font-size: 0.8125rem; display: flex; gap: 0.75rem; align-items: flex-start; line-height: 1.6;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink: 0; margin-top: 0.15rem;"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <div>
+            <strong style="display: block; font-weight: 700;">Portfolio Transparency Notice:</strong>
+            Concept demonstration created by NEXUS LM. This project is for portfolio and demonstration purposes. These live client concepts showcase our technical depth, industry-tailored UI/UX design, and clean frontend engineering.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filter & Project Grid Section -->
+  <section class="section" style="padding-top: 1rem;">
+    <div class="container">
+      
+      <!-- Portfolio Filter Bar -->
+      <div style="display: flex; flex-direction: column; gap: 1rem; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid var(--border-color); padding-bottom: 1.25rem; margin-bottom: 3rem;" class="filter-header-flex">
+        <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-primary); letter-spacing: 0.08em;">
+          Filter by Industry:
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+          <button type="button" class="btn btn-secondary portfolio-filter-btn active" data-filter="all" style="padding: 0.4rem 0.85rem; font-size: 0.6875rem;">All</button>
+          <button type="button" class="btn btn-secondary portfolio-filter-btn" data-filter="business" style="padding: 0.4rem 0.85rem; font-size: 0.6875rem;">Business</button>
+          <button type="button" class="btn btn-secondary portfolio-filter-btn" data-filter="ecommerce" style="padding: 0.4rem 0.85rem; font-size: 0.6875rem;">E-commerce</button>
+          <button type="button" class="btn btn-secondary portfolio-filter-btn" data-filter="healthcare" style="padding: 0.4rem 0.85rem; font-size: 0.6875rem;">Healthcare</button>
+          <button type="button" class="btn btn-secondary portfolio-filter-btn" data-filter="hospitality" style="padding: 0.4rem 0.85rem; font-size: 0.6875rem;">Hospitality</button>
+          <button type="button" class="btn btn-secondary portfolio-filter-btn" data-filter="realestate" style="padding: 0.4rem 0.85rem; font-size: 0.6875rem;">Real Estate</button>
+        </div>
+      </div>
+
+      <!-- All Projects Grid -->
+      <div class="grid-3" id="projectsGrid">
+
+        <!-- Demo 1: Textile B2B (Business / E-commerce) -->
+        <div class="card project-card-item" data-category="business ecommerce" style="overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+          <div style="position: relative; height: 15rem; overflow: hidden; background: #EFECE4;">
+            <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=800&q=80" alt="Aura Weaves & Jacquards Textile Website" style="width: 100%; height: 100%; object-fit: cover;" />
+            <span style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(23,25,27,0.85); color: #FFFFFF; font-family: var(--font-mono); font-size: 0.625rem; padding: 0.2rem 0.5rem; border-radius: 3px;">Textile &amp; Manufacturing</span>
+            <span style="position: absolute; top: 0.75rem; right: 0.75rem; background: #FFFFFF; color: var(--text-primary); font-size: 0.625rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 3px; border: 1px solid var(--border-color);">Live Concept</span>
+          </div>
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; flex-grow: 1; justify-content: space-between;">
+            <div>
+              <h3 style="font-size: 1.25rem;">Aura Weaves &amp; Jacquards</h3>
+              <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">B2B Export &amp; Wholesale Textile House</div>
+              <p style="font-size: 0.8125rem; margin-top: 0.5rem; line-height: 1.6;">
+                A premium B2B textile manufacturing platform featuring an interactive fabric catalogue, yarn specification sheets, sample request flow, and direct WhatsApp export inquiry.
+              </p>
+            </div>
+            <div style="padding-top: 1rem; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.6875rem; font-family: var(--font-mono); color: var(--text-muted);">Surat GIDC Mills</span>
+              <a href="textile/index.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.6875rem;">
+                <span>View Live Demo</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Demo 2: Restaurant (Hospitality) -->
+        <div class="card project-card-item" data-category="hospitality" style="overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+          <div style="position: relative; height: 15rem; overflow: hidden; background: #EFECE4;">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Saffron & Sage Dining Website" style="width: 100%; height: 100%; object-fit: cover;" />
+            <span style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(23,25,27,0.85); color: #FFFFFF; font-family: var(--font-mono); font-size: 0.625rem; padding: 0.2rem 0.5rem; border-radius: 3px;">Hospitality &amp; Dining</span>
+            <span style="position: absolute; top: 0.75rem; right: 0.75rem; background: #FFFFFF; color: var(--text-primary); font-size: 0.625rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 3px; border: 1px solid var(--border-color);">Live Concept</span>
+          </div>
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; flex-grow: 1; justify-content: space-between;">
+            <div>
+              <h3 style="font-size: 1.25rem;">Saffron &amp; Sage Dining</h3>
+              <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">Contemporary Cuisine &amp; Hearth Lounge</div>
+              <p style="font-size: 0.8125rem; margin-top: 0.5rem; line-height: 1.6;">
+                An artisanal culinary website with rich course menus, dietary tagging, ambiance showcase, and an integrated real-time table booking engine.
+              </p>
+            </div>
+            <div style="padding-top: 1rem; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.6875rem; font-family: var(--font-mono); color: var(--text-muted);">Dumas Road, Surat</span>
+              <a href="restaurant/index.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.6875rem;">
+                <span>View Live Demo</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Demo 3: Healthcare (Healthcare) -->
+        <div class="card project-card-item" data-category="healthcare" style="overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+          <div style="position: relative; height: 15rem; overflow: hidden; background: #EFECE4;">
+            <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=800&q=80" alt="PulseCare Clinic Website" style="width: 100%; height: 100%; object-fit: cover;" />
+            <span style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(23,25,27,0.85); color: #FFFFFF; font-family: var(--font-mono); font-size: 0.625rem; padding: 0.2rem 0.5rem; border-radius: 3px;">Healthcare &amp; Clinic</span>
+            <span style="position: absolute; top: 0.75rem; right: 0.75rem; background: #FFFFFF; color: var(--text-primary); font-size: 0.625rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 3px; border: 1px solid var(--border-color);">Live Concept</span>
+          </div>
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; flex-grow: 1; justify-content: space-between;">
+            <div>
+              <h3 style="font-size: 1.25rem;">PulseCare Multi-Speciality</h3>
+              <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">OPD Scheduling &amp; Specialist Care</div>
+              <p style="font-size: 0.8125rem; margin-top: 0.5rem; line-height: 1.6;">
+                A clean clinical web portal featuring comprehensive doctor profiles, consulting schedules, OPD appointment scheduling, and patient preparation directions.
+              </p>
+            </div>
+            <div style="padding-top: 1rem; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.6875rem; font-family: var(--font-mono); color: var(--text-muted);">Ring Road, Surat</span>
+              <a href="healthcare/index.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.6875rem;">
+                <span>View Live Demo</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Demo 4A: ESTATE & CO. (Real Estate - Flagship Demo) -->
+        <div class="card project-card-item" data-category="realestate" style="overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+          <div style="position: relative; height: 15rem; overflow: hidden; background: #EFECE4;">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="ESTATE & CO. Prime Residences Website" style="width: 100%; height: 100%; object-fit: cover;" />
+            <span style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(18,19,22,0.9); color: #C5A880; font-family: var(--font-mono); font-size: 0.625rem; padding: 0.2rem 0.5rem; border-radius: 3px;">Prime Real Estate</span>
+            <span style="position: absolute; top: 0.75rem; right: 0.75rem; background: #FFFFFF; color: var(--text-primary); font-size: 0.625rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 3px; border: 1px solid var(--border-color);">New Demo</span>
+          </div>
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; flex-grow: 1; justify-content: space-between;">
+            <div>
+              <h3 style="font-size: 1.25rem;">ESTATE &amp; CO.</h3>
+              <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">Prime Residences &amp; Architectural Estates</div>
+              <p style="font-size: 0.8125rem; margin-top: 0.5rem; line-height: 1.6;">
+                A sophisticated real estate web portal featuring live multi-parameter property search, real-time price sorting, interactive specifications modal, and instant WhatsApp concierge handoff.
+              </p>
+            </div>
+            <div style="padding-top: 1rem; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.6875rem; font-family: var(--font-mono); color: var(--text-muted);">Vesu &amp; Dumas, Surat</span>
+              <a href="real-estate/index.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.6875rem;">
+                <span>View Live Demo</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Demo 4B: Apex Horizons (Real Estate) -->
+        <div class="card project-card-item" data-category="realestate" style="overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+          <div style="position: relative; height: 15rem; overflow: hidden; background: #EFECE4;">
+            <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80" alt="Apex Horizons Realty Website" style="width: 100%; height: 100%; object-fit: cover;" />
+            <span style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(23,25,27,0.85); color: #FFFFFF; font-family: var(--font-mono); font-size: 0.625rem; padding: 0.2rem 0.5rem; border-radius: 3px;">Real Estate &amp; Architecture</span>
+            <span style="position: absolute; top: 0.75rem; right: 0.75rem; background: #FFFFFF; color: var(--text-primary); font-size: 0.625rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 3px; border: 1px solid var(--border-color);">Live Concept</span>
+          </div>
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; flex-grow: 1; justify-content: space-between;">
+            <div>
+              <h3 style="font-size: 1.25rem;">Apex Horizons Realty</h3>
+              <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">Bespoke Residences &amp; Architectural Living</div>
+              <p style="font-size: 0.8125rem; margin-top: 0.5rem; line-height: 1.6;">
+                A luxury property portal featuring intuitive property filtering by type and price, high-resolution interior galleries, floor plan specs, and private viewing scheduling.
+              </p>
+            </div>
+            <div style="padding-top: 1rem; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.6875rem; font-family: var(--font-mono); color: var(--text-muted);">Vesu &amp; Dumas, Surat</span>
+              <a href="real-estate-demo/index.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.6875rem;">
+                <span>View Live Demo</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Demo 5: PhysioCare (Healthcare) -->
+        <div class="card project-card-item" data-category="healthcare" style="overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+          <div style="position: relative; height: 15rem; overflow: hidden; background: #EFECE4;">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Kinetic Sports Physio Website" style="width: 100%; height: 100%; object-fit: cover;" />
+            <span style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(23,25,27,0.85); color: #FFFFFF; font-family: var(--font-mono); font-size: 0.625rem; padding: 0.2rem 0.5rem; border-radius: 3px;">Rehabilitation &amp; Wellness</span>
+            <span style="position: absolute; top: 0.75rem; right: 0.75rem; background: #FFFFFF; color: var(--text-primary); font-size: 0.625rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 3px; border: 1px solid var(--border-color);">Live Concept</span>
+          </div>
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; flex-grow: 1; justify-content: space-between;">
+            <div>
+              <h3 style="font-size: 1.25rem;">Kinetic Sports Physio &amp; Rehab</h3>
+              <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">Advanced Biomechanical Therapy &amp; Recovery</div>
+              <p style="font-size: 0.8125rem; margin-top: 0.5rem; line-height: 1.6;">
+                A modern sports physiotherapy clinic website breaking down targeted rehabilitation programs, certified therapist credentials, and online consultation bookings.
+              </p>
+            </div>
+            <div style="padding-top: 1rem; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.6875rem; font-family: var(--font-mono); color: var(--text-muted);">Adajan, Surat</span>
+              <a href="physiocare/index.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.6875rem;">
+                <span>View Live Demo</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Demo 6: Housekeeping (Business / Services) -->
+        <div class="card project-card-item" data-category="business" style="overflow: hidden; display: flex; flex-direction: column; justify-content: space-between;">
+          <div style="position: relative; height: 15rem; overflow: hidden; background: #EFECE4;">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="SparkleClean Facility Care Website" style="width: 100%; height: 100%; object-fit: cover;" />
+            <span style="position: absolute; top: 0.75rem; left: 0.75rem; background: rgba(23,25,27,0.85); color: #FFFFFF; font-family: var(--font-mono); font-size: 0.625rem; padding: 0.2rem 0.5rem; border-radius: 3px;">Facility &amp; Home Services</span>
+            <span style="position: absolute; top: 0.75rem; right: 0.75rem; background: #FFFFFF; color: var(--text-primary); font-size: 0.625rem; font-weight: 700; padding: 0.2rem 0.5rem; border-radius: 3px; border: 1px solid var(--border-color);">Live Concept</span>
+          </div>
+          <div style="padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; flex-grow: 1; justify-content: space-between;">
+            <div>
+              <h3 style="font-size: 1.25rem;">SparkleClean Facility Care</h3>
+              <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 600;">Residential &amp; Commercial Deep Cleaning</div>
+              <p style="font-size: 0.8125rem; margin-top: 0.5rem; line-height: 1.6;">
+                A user-friendly housekeeping service website with transparent pricing tiers, instant service cost estimator, Surat locality postal checker, and fast booking.
+              </p>
+            </div>
+            <div style="padding-top: 1rem; border-top: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.6875rem; font-family: var(--font-mono); color: var(--text-muted);">All Surat Zones</span>
+              <a href="housekeeping/index.html" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.6875rem;">
+                <span>View Live Demo</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7"/><path d="M7 7h10v10"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div style="background-color: var(--bg-dark); color: var(--text-dark); border-radius: var(--radius-md); padding: 3.5rem 2rem; text-align: center; border: 1px solid #282B2E;">
+        <span class="eyebrow" style="color: var(--accent);">Ready to Elevate Your Digital Presence?</span>
+        <h2 style="color: #FFFFFF; font-size: clamp(2rem, 4vw, 3rem); margin-top: 0.5rem; margin-bottom: 1rem;">
+          Let's Build Something That Works.
+        </h2>
+        <p style="color: #C0BEB8; max-width: 36rem; margin: 0 auto 2rem; font-size: 1rem;">
+          Whether you need a custom business platform, an appointment scheduling engine, or a full e-commerce system, our Surat team is ready to engineer your solution.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="../contact.html" class="btn btn-primary" style="background-color: var(--bg-primary); color: var(--text-primary); border-color: var(--bg-primary);">Discuss Your Project</a>
+          <button type="button" class="btn btn-secondary js-open-quote" data-plan="booking" style="background: transparent; color: #FFFFFF; border-color: rgba(255,255,255,0.2);">Get a Detailed Quote</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-statement">
+      <div class="container">
+        <div>
+          <span class="eyebrow" style="color: var(--accent);">NEXUS LM · Web Development Services</span>
+          <h2 style="color: #FFFFFF; font-size: clamp(1.5rem, 3vw, 2.25rem); margin-top: 0.25rem;">
+            Building websites that work. Grow. Inspire.
+          </h2>
+        </div>
+        <a href="../contact.html" class="btn btn-primary" style="background-color: var(--bg-primary); color: var(--text-primary); border-color: var(--bg-primary);">
+          <span>Start a Project</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="../images/logo-horizontal-light.png" alt="NEXUS LM" style="height: 2.25rem; width: auto; margin-bottom: 1.25rem;" />
+          <p style="color: #C0BEB8; font-size: 0.8125rem; line-height: 1.7; margin-bottom: 1.5rem;">
+            Professional web development studio based in Surat, Gujarat. We build high-performance business websites, online booking solutions, e-commerce stores, and custom web applications for Indian and international clients.
+          </p>
+          <div style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--accent);">
+            LOCATION: SURAT, GUJARAT, INDIA
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../services.html">Services &amp; Scope</a></li>
+            <li><a href="index.html">Our Work &amp; Demos</a></li>
+            <li><a href="../about.html">About the Studio</a></li>
+            <li><a href="../pricing.html">Packages &amp; Pricing</a></li>
+            <li><a href="../contact.html">Contact &amp; Inquiries</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Concept Demos</h4>
+          <ul class="footer-links">
+            <li><a href="textile/index.html">Aura Weaves (Textile)</a></li>
+            <li><a href="restaurant/index.html">Saffron &amp; Sage (Dining)</a></li>
+            <li><a href="healthcare/index.html">PulseCare (Healthcare)</a></li>
+            <li><a href="real-estate/index.html">ESTATE &amp; CO. (Real Estate)</a></li>
+            <li><a href="physiocare/index.html">Kinetic Physio (Sports Rehab)</a></li>
+            <li><a href="housekeeping/index.html">SparkleClean (Cleaning)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Contact</h4>
+          <a href="https://wa.me/916355049071" target="_blank" rel="noopener noreferrer" class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #25D366;"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            <div>
+              <div style="font-size: 0.625rem; font-family: var(--font-mono); color: var(--accent);">WHATSAPP</div>
+              <div style="color: #FFFFFF; font-weight: 600;">+91 63550 49071</div>
+            </div>
+          </a>
+
+          <a href="tel:+918734009367" class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #38BDF8;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <div style="font-size: 0.625rem; font-family: var(--font-mono); color: var(--accent);">PHONE</div>
+              <div style="color: #FFFFFF; font-weight: 600;">+91 87340 09367</div>
+            </div>
+          </a>
+
+          <a href="https://instagram.com/nexuslm05" target="_blank" rel="noopener noreferrer" class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #F472B6;"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+            <div>
+              <div style="font-size: 0.625rem; font-family: var(--font-mono); color: var(--accent);">INSTAGRAM</div>
+              <div style="color: #FFFFFF; font-weight: 600;">@nexuslm05</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 NEXUS LM. All rights reserved. Surat, Gujarat, India.
+        </div>
+        <div style="font-family: var(--font-mono); letter-spacing: 0.05em; font-size: 0.6875rem;">
+          BUILDING WEBSITES THAT WORK. GROW. INSPIRE.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quote Modal -->
+  <div id="quoteModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button type="button" id="closeQuoteModal" class="modal-close" aria-label="Close modal">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18"/><line x1="6" x2="18" y1="6" y2="18"/></svg>
+      </button>
+
+      <div id="quoteFormWrapper">
+        <span class="eyebrow" style="color: var(--text-secondary);">Direct Project Estimate</span>
+        <h3 id="modalTitle" style="font-size: 1.5rem; margin-top: 0.25rem; margin-bottom: 0.5rem;">Request a Project Quote</h3>
+        <p style="font-size: 0.8125rem; color: var(--text-secondary); margin-bottom: 1.5rem;">
+          Select your target package below. Upon submission, a pre-formatted WhatsApp brief will be prepared for immediate discussion with our senior developer.
+        </p>
+
+        <!-- Plan Selectors -->
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; margin-bottom: 1.5rem;" class="plan-selector-grid">
+          <button type="button" class="plan-selector-btn" data-plan="essential" style="padding: 0.75rem 0.5rem; border: 1px solid var(--border-color); border-radius: var(--radius-sm); background: #FAF9F6; text-align: center; cursor: pointer;">
+            <div style="font-size: 0.625rem; font-family: var(--font-mono); text-transform: uppercase; color: var(--text-muted);">PLAN 01</div>
+            <div style="font-size: 0.8125rem; font-weight: 700; color: var(--text-primary);">Basic</div>
+            <div style="font-size: 0.75rem; color: var(--text-secondary);">₹20,000</div>
+          </button>
+
+          <button type="button" class="plan-selector-btn active" data-plan="booking" style="padding: 0.75rem 0.5rem; border: 1px solid var(--text-primary); border-radius: var(--radius-sm); background: #FFFFFF; text-align: center; cursor: pointer;">
+            <div style="font-size: 0.625rem; font-family: var(--font-mono); text-transform: uppercase; color: #0284C7; font-weight: 700;">POPULAR</div>
+            <div style="font-size: 0.8125rem; font-weight: 700; color: var(--text-primary);">Online Booking</div>
+            <div style="font-size: 0.75rem; color: var(--text-secondary);">₹34,500</div>
+          </button>
+
+          <button type="button" class="plan-selector-btn" data-plan="enterprise" style="padding: 0.75rem 0.5rem; border: 1px solid var(--border-color); border-radius: var(--radius-sm); background: #FAF9F6; text-align: center; cursor: pointer;">
+            <div style="font-size: 0.625rem; font-family: var(--font-mono); text-transform: uppercase; color: var(--text-muted);">PLAN 03</div>
+            <div style="font-size: 0.8125rem; font-weight: 700; color: var(--text-primary);">Enterprise</div>
+            <div style="font-size: 0.75rem; color: var(--text-secondary);">₹89,999</div>
+          </button>
+        </div>
+
+        <form id="quoteForm">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;" class="form-row-2">
+            <div class="form-group">
+              <label for="quoteName" class="form-label">Your Name *</label>
+              <input type="text" id="quoteName" class="form-control" required placeholder="e.g. Ramesh Patel" />
+            </div>
+            <div class="form-group">
+              <label for="quotePhone" class="form-label">Phone / WhatsApp *</label>
+              <input type="tel" id="quotePhone" class="form-control" required placeholder="e.g. +91 98250 12345" />
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;" class="form-row-2">
+            <div class="form-group">
+              <label for="quoteBusiness" class="form-label">Business Name</label>
+              <input type="text" id="quoteBusiness" class="form-control" placeholder="e.g. Patel Textiles Surat" />
+            </div>
+            <div class="form-group">
+              <label for="quoteEmail" class="form-label">Email Address</label>
+              <input type="email" id="quoteEmail" class="form-control" placeholder="e.g. ramesh@example.com" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="quoteNotes" class="form-label">Project Details / Requirements</label>
+            <textarea id="quoteNotes" class="form-control" placeholder="Tell us about your target features, existing domain, or design inspiration..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.875rem;">
+            <span>Send Estimate Request via WhatsApp</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Success Confirmation State -->
+      <div id="quoteSuccess" style="display: none; text-align: center; padding: 2rem 1rem;">
+        <div style="width: 3.5rem; height: 3.5rem; border-radius: 50%; background: #D1FAE5; color: #065F46; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Estimate Requested</h3>
+        <p style="font-size: 0.875rem; color: var(--text-secondary); max-width: 28rem; margin: 0 auto 1.5rem; line-height: 1.6;">
+          Your inquiry has been formatted and opened in WhatsApp. If it didn't open automatically, contact our team directly at <strong>+91 63550 49071</strong>.
+        </p>
+        <button type="button" class="btn btn-primary" onclick="document.getElementById('quoteModal').classList.remove('open');">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/animations.js"></script>
+</body>
+</html>

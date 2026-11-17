@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SparkleClean — Residential &amp; Commercial Deep Cleaning | Surat</title>
+  <meta name="description" content="SparkleClean Facility Care in Surat. Deep home cleaning, move-in sanitization, sofa shampooing, and dynamic online price calculator for Surat residences." />
+  <link rel="icon" type="image/png" href="../../favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css" />
+  <style>
+    :root {
+      --sp-bg: #F8FAFC;
+      --sp-card: #FFFFFF;
+      --sp-primary: #0284C7;
+      --sp-primary-dark: #0369A1;
+      --sp-border: #E2E8F0;
+      --sp-text: #0F172A;
+      --sp-muted: #64748B;
+    }
+    body { background-color: var(--sp-bg); color: var(--sp-text); font-family: 'Inter', sans-serif; margin: 0; }
+    .sp-btn-primary { background: var(--sp-primary); color: #FFF; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; padding: 0.75rem 1.5rem; border-radius: 6px; text-decoration: none; display: inline-block; border: none; cursor: pointer; transition: background 0.2s; }
+    .sp-btn-primary:hover { background: var(--sp-primary-dark); }
+    .sp-input { width: 100%; box-sizing: border-box; background: #FFF; border: 1px solid var(--sp-border); color: var(--sp-text); padding: 0.65rem 0.85rem; border-radius: 6px; font-size: 0.8125rem; outline: none; }
+    .sp-input:focus { border-color: var(--sp-primary); }
+  </style>
+</head>
+<body>
+
+  <!-- Sticky Demo Top Banner -->
+  <div class="demo-top-banner">
+    <div class="container">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <a href="../../work.html" class="demo-back-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+          <span>Back to NEXUS LM Portfolio</span>
+        </a>
+        <span style="color: #66686A;">|</span>
+        <span style="color: #A9A99F;">Client Concept: <strong>SparkleClean Facility Care</strong> (Housekeeping &amp; Services)</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <span style="font-size: 0.6875rem; color: #A9A99F;">Concept Demo by NEXUS LM</span>
+        <a href="../../contact.html" class="demo-badge">Build a Website Like This</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header style="background: rgba(255, 255, 255, 0.95); border-bottom: 1px solid var(--sp-border); position: sticky; top: 2.125rem; z-index: 30; backdrop-filter: blur(8px);">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; height: 5rem;">
+      <div style="display: flex; align-items: center; gap: 0.75rem;">
+        <div style="width: 2.5rem; height: 2.5rem; border-radius: 8px; background: #E0F2FE; color: var(--sp-primary); display: flex; align-items: center; justify-content: center; font-weight: 800;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+        </div>
+        <div>
+          <div style="font-family: var(--font-heading); font-size: 1.15rem; font-weight: 800; color: #0369A1; letter-spacing: -0.01em;">SPARKLECLEAN</div>
+          <div style="font-size: 0.625rem; font-family: var(--font-mono); text-transform: uppercase; color: var(--sp-muted); letter-spacing: 0.1em;">Facility Care &amp; Deep Sanitization · Surat</div>
+        </div>
+      </div>
+
+      <nav style="display: flex; gap: 2rem; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;" class="tx-nav">
+        <a href="#calculator" style="color: var(--sp-muted); text-decoration: none;">Price Calculator</a>
+        <a href="#coverage" style="color: var(--sp-muted); text-decoration: none;">Service Areas</a>
+        <a href="#booking" style="color: var(--sp-muted); text-decoration: none;">Book Dispatch</a>
+      </nav>
+
+      <a href="#calculator" class="sp-btn-primary">Calculate Cost</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="section" style="border-bottom: 1px solid var(--sp-border); background: linear-gradient(180deg, #F0F9FF 0%, #F8FAFC 100%);">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: center;">
+        <div>
+          <div style="display: inline-block; padding: 0.25rem 0.75rem; background: #E0F2FE; border-radius: 4px; font-family: var(--font-mono); font-size: 0.6875rem; font-weight: 700; color: #0284C7; margin-bottom: 1rem;">
+            CERTIFIED GERMAN EXTRACTION EQUIPMENT · SURAT
+          </div>
+          <h1 style="font-size: clamp(2.25rem, 4vw, 3.5rem); line-height: 1.15; color: #0369A1; margin-bottom: 1.25rem;">
+            Hospital-Grade Deep Cleaning for Homes &amp; Offices.
+          </h1>
+          <p style="font-size: 1rem; color: var(--sp-muted); line-height: 1.7; margin-bottom: 1.75rem;">
+            Trained and police-verified sanitation crews using Kärcher steam extraction and eco-safe disinfectants across Vesu, Adajan, Pal, Piplod, and all prime Surat neighborhoods.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="#calculator" class="sp-btn-primary">Instant Estimate Calculator</a>
+            <a href="tel:+918734009367" class="btn btn-secondary" style="font-size: 0.75rem;">Direct Dispatch Desk: +91 87340 09367</a>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 2.5rem; padding-top: 1.5rem; border-top: 1px solid var(--sp-border);">
+            <div>
+              <div style="font-size: 1.5rem; font-weight: 800; color: #0369A1;">4,500+</div>
+              <div style="font-size: 0.6875rem; color: var(--sp-muted); text-transform: uppercase;">Homes Sanitized</div>
+            </div>
+            <div>
+              <div style="font-size: 1.5rem; font-weight: 800; color: #0369A1;">100%</div>
+              <div style="font-size: 0.6875rem; color: var(--sp-muted); text-transform: uppercase;">Police Verified Crews</div>
+            </div>
+            <div>
+              <div style="font-size: 1.5rem; font-weight: 800; color: #0369A1;">Kärcher</div>
+              <div style="font-size: 0.6875rem; color: var(--sp-muted); text-transform: uppercase;">German Steam Tech</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=800&q=80" alt="SparkleClean Professional Cleaning" style="width: 100%; border-radius: 8px; border: 1px solid var(--sp-border); box-shadow: var(--shadow-subtle);" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Live Price Calculator -->
+  <section id="calculator" class="section" style="border-bottom: 1px solid var(--sp-border);">
+    <div class="container" style="max-width: 52rem;">
+      <div style="background: var(--sp-card); border: 1px solid var(--sp-border); border-radius: 8px; padding: 2.5rem; box-shadow: var(--shadow-subtle);">
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <div style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--sp-primary); font-family: var(--font-mono); margin-bottom: 0.35rem;">
+            Instant Price Transparency
+          </div>
+          <h2 style="font-size: 2rem; color: #0369A1; margin-bottom: 0.5rem;">Cleaning Cost Calculator</h2>
+          <p style="font-size: 0.8125rem; color: var(--sp-muted);">
+            Select your apartment size and cleaning depth to view live pricing. No hidden travel fees.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+          <div>
+            <label style="display: block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--sp-muted); margin-bottom: 0.5rem;">1. Property Size</label>
+            <select id="calcBhk" class="sp-input" style="padding: 0.75rem;">
+              <option value="1bhk">1 BHK Apartment</option>
+              <option value="2bhk" selected>2 BHK Apartment</option>
+              <option value="3bhk">3 BHK Apartment</option>
+              <option value="4bhk">4 BHK / Duplex</option>
+              <option value="villa">Bungalow / Independent Villa</option>
+            </select>
+          </div>
+
+          <div>
+            <label style="display: block; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--sp-muted); margin-bottom: 0.5rem;">2. Cleaning Depth</label>
+            <select id="calcTier" class="sp-input" style="padding: 0.75rem;">
+              <option value="standard">Standard Refresh (Dusting &amp; Mopping)</option>
+              <option value="deep" selected>Deep Sanitization (Kitchen + Baths Scrub)</option>
+              <option value="movein">Move-In / Move-Out Intensive Deep Clean</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Add-on Services -->
+        <div style="background: #F8FAFC; border: 1px solid var(--sp-border); border-radius: 6px; padding: 1.25rem; margin-bottom: 2rem;">
+          <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--sp-muted); margin-bottom: 0.75rem;">3. Optional Specialized Add-Ons</div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+            <label style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.8125rem; cursor: pointer;">
+              <input type="checkbox" id="addonSofa" value="800" />
+              <span>Sofa Foam Extraction (+₹800)</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.8125rem; cursor: pointer;">
+              <input type="checkbox" id="addonFridge" value="450" />
+              <span>Refrigerator Deep Scrub (+₹450)</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.6rem; font-size: 0.8125rem; cursor: pointer;">
+              <input type="checkbox" id="addonBalcony" value="500" />
+              <span>Balcony Pressure Wash (+₹500)</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Dynamic Total Box -->
+        <div style="display: flex; justify-content: space-between; align-items: center; background: #E0F2FE; border: 1px solid #BAE6FD; border-radius: 6px; padding: 1.25rem 1.75rem; margin-bottom: 2rem;">
+          <div>
+            <div style="font-size: 0.6875rem; text-transform: uppercase; font-family: var(--font-mono); color: #0284C7; font-weight: 700;">Calculated Estimate</div>
+            <div style="font-size: 0.8125rem; color: #0369A1;">Includes materials, machines &amp; verified crew</div>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-size: 2rem; font-weight: 800; color: #0369A1; font-family: var(--font-mono);" id="calcTotalDisplay">₹3,999</div>
+            <div style="font-size: 0.6875rem; color: var(--sp-muted);">All taxes included</div>
+          </div>
+        </div>
+
+        <div style="text-align: center;">
+          <a href="#booking" class="sp-btn-primary" style="padding: 0.85rem 2rem;">Proceed to Schedule Dispatch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Surat Locality Coverage Checker -->
+  <section id="coverage" class="section" style="border-bottom: 1px solid var(--sp-border); background: #F1F5F9;">
+    <div class="container" style="max-width: 44rem; text-align: center;">
+      <div style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--sp-primary); font-family: var(--font-mono); margin-bottom: 0.35rem;">
+        Dispatch Radius
+      </div>
+      <h2 style="font-size: 2rem; color: #0369A1; margin-bottom: 0.75rem;">Check Your Surat Locality</h2>
+      <p style="font-size: 0.875rem; color: var(--sp-muted); margin-bottom: 1.5rem;">
+        We serve all primary Surat postal zones with 0₹ transit surcharge.
+      </p>
+
+      <form id="coverageForm" style="display: flex; gap: 0.5rem; max-width: 28rem; margin: 0 auto 1.5rem;">
+        <input type="text" id="areaInput" placeholder="Enter area (e.g. Vesu, Adajan, 395007)" class="sp-input" required />
+        <button type="submit" class="sp-btn-primary" style="white-space: nowrap;">Check Area</button>
+      </form>
+
+      <div id="coverageResult" style="display: none; padding: 1rem; border-radius: 6px; font-size: 0.875rem;"></div>
+
+      <div style="font-size: 0.75rem; color: var(--sp-muted); margin-top: 1.5rem;">
+        Frequently covered: Vesu · Adajan · Pal · Piplod · City Light · Althan · Dumas Road · Varachha · Katargam · Bhatar · Rander
+      </div>
+    </div>
+  </section>
+
+  <!-- Direct Booking Section -->
+  <section id="booking" class="section">
+    <div class="container" style="max-width: 46rem;">
+      <div style="background: var(--sp-card); border: 1px solid var(--sp-border); border-radius: 8px; padding: 2.5rem; box-shadow: var(--shadow-subtle);">
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <div style="font-size: 0.6875rem; text-transform: uppercase; letter-spacing: 0.2em; color: var(--sp-primary); font-family: var(--font-mono); margin-bottom: 0.35rem;">
+            Slot Confirmation
+          </div>
+          <h2 style="font-size: 2rem; color: #0369A1; margin-bottom: 0.5rem;">Schedule Your Cleaning Team</h2>
+          <p style="font-size: 0.8125rem; color: var(--sp-muted);">
+            Pick a date and arrival window. Crew lead contacts 30 minutes before arrival.
+          </p>
+        </div>
+
+        <form id="dispatchBookingForm" style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+            <div>
+              <label style="display: block; font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--sp-muted); margin-bottom: 0.35rem;">Service Date *</label>
+              <input type="date" id="cleanDate" required class="sp-input" value="2026-11-24" />
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--sp-muted); margin-bottom: 0.35rem;">Arrival Batch *</label>
+              <select id="cleanBatch" class="sp-input">
+                <option>09:00 AM (Morning Batch)</option>
+                <option>11:30 AM (Mid-Day Batch)</option>
+                <option>02:30 PM (Afternoon Batch)</option>
+              </select>
+            </div>
+            <div>
+              <label style="display: block; font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--sp-muted); margin-bottom: 0.35rem;">Customer Name *</label>
+              <input type="text" id="custName" required placeholder="e.g. Pooja Choksi" class="sp-input" />
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+            <div>
+              <label style="display: block; font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--sp-muted); margin-bottom: 0.35rem;">WhatsApp Number *</label>
+              <input type="tel" id="custPhone" required placeholder="e.g. +91 98765 43210" class="sp-input" />
+            </div>
+            <div style="grid-column: span 2;">
+              <label style="display: block; font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--sp-muted); margin-bottom: 0.35rem;">Full Residential Address in Surat *</label>
+              <input type="text" id="custAddress" required placeholder="e.g. B-402, Riverfront Heights, Near VIP Road, Vesu, Surat" class="sp-input" />
+            </div>
+          </div>
+
+          <div>
+            <label style="display: block; font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; color: var(--sp-muted); margin-bottom: 0.35rem;">Specific Cleaning Instructions or Pet Notice</label>
+            <input type="text" id="custNotes" placeholder="e.g. 2 cats in apartment, focus heavy on kitchen chimney grease" class="sp-input" />
+          </div>
+
+          <div style="text-align: center; margin-top: 0.5rem;">
+            <button type="submit" class="sp-btn-primary" style="width: 100%; max-width: 20rem; padding: 0.85rem 1.5rem;">
+              Confirm Service Dispatch
+            </button>
+          </div>
+        </form>
+
+        <!-- Dispatch Confirmation State -->
+        <div id="dispatchSuccess" style="display: none; text-align: center; padding: 2rem 1rem;">
+          <div style="width: 3.5rem; height: 3.5rem; border-radius: 50%; background: #E0F2FE; color: var(--sp-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h3 style="font-size: 1.5rem; color: #0369A1; margin-bottom: 0.5rem;">Cleaning Dispatch Booked</h3>
+          <p style="font-size: 0.875rem; color: var(--sp-muted); max-width: 30rem; margin: 0 auto 1.5rem; line-height: 1.6;" id="dispatchSuccessDesc">
+            Booking details recorded.
+          </p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a id="dispatchWaHandoff" href="#" target="_blank" class="sp-btn-primary">Connect with Dispatcher on WhatsApp</a>
+            <button id="dispatchResetBtn" class="btn btn-secondary">Make Another Booking</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background: #0F172A; color: #94A3B8; padding: 3rem 0; font-size: 0.8125rem;">
+    <div class="container" style="display: flex; flex-direction: column; gap: 1rem; align-items: center; text-align: center;">
+      <div style="font-size: 1.15rem; color: #FFF; font-weight: 700;">SparkleClean Facility Care &amp; Sanitization</div>
+      <div>Althan Canal Road &amp; Piplod, Surat, Gujarat 395007 · Central Dispatch: <a href="tel:+918734009367" style="color: #38BDF8; text-decoration: none;">+91 87340 09367</a></div>
+      <div style="font-size: 0.6875rem; color: #64748B; border-top: 1px solid #1E293B; padding-top: 1.5rem; width: 100%; max-width: 32rem;">
+        Concept demonstration created by NEXUS LM Web Development Services · Surat
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Price Matrix
+    const prices = {
+      '1bhk': { standard: 1799, deep: 2899, movein: 3499 },
+      '2bhk': { standard: 2499, deep: 3999, movein: 4899 },
+      '3bhk': { standard: 3299, deep: 5299, movein: 6499 },
+      '4bhk': { standard: 4299, deep: 6899, movein: 8499 },
+      'villa': { standard: 6999, deep: 10999, movein: 13499 }
+    };
+
+    const calcBhk = document.getElementById('calcBhk');
+    const calcTier = document.getElementById('calcTier');
+    const addonSofa = document.getElementById('addonSofa');
+    const addonFridge = document.getElementById('addonFridge');
+    const addonBalcony = document.getElementById('addonBalcony');
+    const totalDisplay = document.getElementById('calcTotalDisplay');
+
+    function calculateTotal() {
+      const bhk = calcBhk.value;
+      const tier = calcTier.value;
+      let total = prices[bhk][tier];
+      if (addonSofa.checked) total += parseInt(addonSofa.value, 10);
+      if (addonFridge.checked) total += parseInt(addonFridge.value, 10);
+      if (addonBalcony.checked) total += parseInt(addonBalcony.value, 10);
+
+      totalDisplay.textContent = '₹' + total.toLocaleString('en-IN');
+      return total;
+    }
+
+    calcBhk.addEventListener('change', calculateTotal);
+    calcTier.addEventListener('change', calculateTotal);
+    addonSofa.addEventListener('change', calculateTotal);
+    addonFridge.addEventListener('change', calculateTotal);
+    addonBalcony.addEventListener('change', calculateTotal);
+
+    // Coverage Area Checker
+    const coverageForm = document.getElementById('coverageForm');
+    const areaInput = document.getElementById('areaInput');
+    const coverageResult = document.getElementById('coverageResult');
+    const coveredAreas = ['vesu', 'adajan', 'pal', 'piplod', 'city light', 'althan', 'dumas', 'varachha', 'katargam', 'bhatar', 'rander', '395007', '395009', '395001', '394230'];
+
+    coverageForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const val = areaInput.value.toLowerCase().trim();
+      const isCovered = coveredAreas.some(area => val.includes(area));
+      coverageResult.style.display = 'block';
+      if (isCovered) {
+        coverageResult.style.background = '#DCFCE7';
+        coverageResult.style.color = '#15803D';
+        coverageResult.innerHTML = `✓ Great news! <strong>${areaInput.value}</strong> is inside our daily primary express coverage area with <strong>₹0 transit surcharge</strong>.`;
+      } else {
+        coverageResult.style.background = '#FEF3C7';
+        coverageResult.style.color = '#B45309';
+        coverageResult.innerHTML = `Notice: <strong>${areaInput.value}</strong> is on our peripheral route. Dispatch is available with a nominal travel fee of ₹150.`;
+      }
+    });
+
+    // Dispatch Booking Form
+    const bookingForm = document.getElementById('dispatchBookingForm');
+    const successBox = document.getElementById('dispatchSuccess');
+    const successDesc = document.getElementById('dispatchSuccessDesc');
+    const waLink = document.getElementById('dispatchWaHandoff');
+    const resetBtn = document.getElementById('dispatchResetBtn');
+
+    bookingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const bhk = calcBhk.options[calcBhk.selectedIndex].text;
+      const tier = calcTier.options[calcTier.selectedIndex].text;
+      const total = calculateTotal();
+      const date = document.getElementById('cleanDate').value;
+      const batch = document.getElementById('cleanBatch').value;
+      const name = document.getElementById('custName').value.trim();
+      const phone = document.getElementById('custPhone').value.trim();
+      const address = document.getElementById('custAddress').value.trim();
+      const notes = document.getElementById('custNotes').value.trim();
+
+      const text = `Hello SparkleClean Dispatch, I would like to book a cleaning service:%0A- Customer: ${encodeURIComponent(name)}%0A- Property: ${encodeURIComponent(bhk)}%0A- Tier: ${encodeURIComponent(tier)}%0A- Estimate: ₹${total}%0A- Date & Batch: ${encodeURIComponent(date)} (${encodeURIComponent(batch)})%0A- Address: ${encodeURIComponent(address)}%0A- Phone: ${encodeURIComponent(phone)}${notes ? '%0A- Notes: ' + encodeURIComponent(notes) : ''}`;
+
+      waLink.href = `https://wa.me/916355049071?text=${text}`;
+      successDesc.innerHTML = `Cleaning crew assigned for <strong>${name}</strong> on <strong>${date}</strong> (${batch}) at <strong>${address}</strong>. Total estimated cost: <strong>₹${total.toLocaleString('en-IN')}</strong>.`;
+
+      bookingForm.style.display = 'none';
+      successBox.style.display = 'block';
+    });
+
+    resetBtn.addEventListener('click', () => {
+      bookingForm.reset();
+      bookingForm.style.display = 'flex';
+      successBox.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
+
